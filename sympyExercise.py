@@ -16,4 +16,5 @@ print(sympy.diff(expr, y))
 print(sympy.factor(x ** 3 - x ** 2 - 3 * x + 3))
 
 
+# integrate(積分) ####################################
 print(sympy.integrate(3 * x**2 + 4 * x + 1))
