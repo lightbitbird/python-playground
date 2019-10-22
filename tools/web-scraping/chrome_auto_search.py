@@ -1,5 +1,10 @@
+# Check your conda envs
+# $ conda info -e
+# $ source activate #{conda's env name}
 # You need install selenium and chrome webdriver in advance
 # $ pip install selenium
+# $ brew cask install chromedriver
+# OR
 # Download current chrome version of webdriver from http://chromedriver.chromium.org/downloads
 # $ unzip chromedriver_mac64.zip
 # $ mkdir /usr/local/bin/Cellar/web-driver
@@ -8,8 +13,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-options = webdriver.ChromeOptions()
-chrome = webdriver.Chrome()
+c_options = webdriver.ChromeOptions()
+chrome = webdriver.Chrome(options=c_options)
 
 location = input('Place: ')
 favorite_plays = ['hotel', 'museum', 'sightseeing', 'shopping', 'scenery']
